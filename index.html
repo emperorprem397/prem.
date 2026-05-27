@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Prem Vijay Kadam — Web Designer crafting immersive, SEO-optimised digital experiences. Available for freelance."/>
+  <meta name="keywords" content="web designer, UI/UX, freelance, Prem Vijay Kadam, portfolio, Jodhpur"/>
+  <meta property="og:title" content="Prem Vijay Kadam | Web Designer"/>
+  <meta property="og:description" content="Turning Ideas Into Immersive Digital Experiences"/>
+  <title>Prem Vijay Kadam | Web Designer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo"><span class="lb">[</span>PVK<span class="lb">]</span></a>
+      <ul class="nav-links">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#work"     class="nav-link">Work</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-hire">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-bg" id="drawerBg"></div>
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
+    <a href="#about"   class="drawer-link">About</a>
+    <a href="#work"    class="drawer-link">Work</a>
+    <a href="#skills"  class="drawer-link">Skills</a>
+    <a href="#contact" class="drawer-link">Contact</a>
+    <a href="#contact" class="drawer-cta">Hire Me</a>
+  </div>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="home">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow-a" aria-hidden="true"></div>
+    <div class="hero-glow-b" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>Available for freelance
+        </div>
+        <h1 class="hero-h1">
+          <span class="h1-white">PREM</span>
+          <span class="h1-dim">VIJAY</span>
+          <span class="h1-white">KADAM</span>
+        </h1>
+        <p class="hero-role">
+          I'm a <span class="tw" id="typewriter"></span><span class="tw-cur">|</span>
+        </p>
+        <p class="hero-sub">Turning Ideas Into Immersive Digital Experiences — pixel-perfect, SEO-optimised, and built to convert.</p>
+        <div class="hero-btns">
+          <a href="#work"    class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-n" data-target="5">0</span><span class="stat-plus">+</span><span class="stat-l">Projects</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-n" data-target="3">0</span><span class="stat-plus">+</span><span class="stat-l">Clients</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-n" data-target="2">0</span><span class="stat-plus">+</span><span class="stat-l">Yrs Active</span></div>
+        </div>
+      </div>
+
+      <div class="hero-3d" id="hero3d">
+        <div class="canvas-glow"></div>
+        <canvas id="threeCanvas"></canvas>
+        <span class="ol top-ol">UI/UX</span>
+        <span class="ol right-ol">Design</span>
+        <span class="ol bottom-ol">SEO</span>
+        <span class="ol left-ol">Code</span>
+      </div>
+    </div>
+
+    <div class="scroll-ind">
+      <span>Scroll</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col fade-up">
+          <div class="about-img-wrap">
+            <img src="images/prem.jpg" alt="Prem Vijay Kadam" class="about-img"/>
+            <div class="img-chip"><i class="fa-solid fa-pen-nib"></i> Web Designer</div>
+            <div class="img-dring"></div>
+          </div>
+        </div>
+        <div class="about-txt fade-up" style="animation-delay:.15s">
+          <span class="sec-label">// About Me</span>
+          <h2 class="sec-h2">The Person Behind<br/><em>The Pixels</em></h2>
+          <p class="about-p">I'm <strong>Prem Vijay Kadam</strong> — a passionate web designer focused on creating websites that don't just look great, but <strong>perform</strong>. I blend clean visual design with technical precision to deliver digital products that are fast, minimal, and memorable.</p>
+          <p class="about-p">From custom landing pages to full business websites, I bring ideas to life with a sharp eye for detail and a strong understanding of what works online. Creative. Reliable. Professional.</p>
+          <div class="about-tags">
+            <span>Figma</span><span>HTML/CSS</span><span>JavaScript</span>
+            <span>SEO</span><span>Three.js</span><span>Responsive Design</span>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn-primary">Work With Me</a>
+            <a href="https://youtube.com/@emperorprem_7" target="_blank" class="btn-yt"><i class="fa-brands fa-youtube"></i> YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SERVICES ═══════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="sec-head fade-up">
+        <span class="sec-label">// What I Do</span>
+        <h2 class="sec-h2">Services <em>Built</em> to Perform</h2>
+      </div>
+      <div class="srv-grid">
+        <div class="srv-card fade-up">
+          <div class="srv-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Website Design</h3>
+          <p>Custom, pixel-perfect websites tailored to your brand — built to impress and convert visitors into customers.</p>
+        </div>
+        <div class="srv-card fade-up" style="animation-delay:.07s">
+          <div class="srv-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>SEO Optimisation</h3>
+          <p>Every site I build is structured for search engines from day one — fast, semantic, and discoverable.</p>
+        </div>
+        <div class="srv-card fade-up" style="animation-delay:.14s">
+          <div class="srv-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Responsive Builds</h3>
+          <p>Flawless on every screen size — phone, tablet, or desktop. Zero compromises on mobile experience.</p>
+        </div>
+        <div class="srv-card fade-up" style="animation-delay:.21s">
+          <div class="srv-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Custom Features</h3>
+          <p>3D elements, scroll animations, interactive UI — I add features that set your site apart from the rest.</p>
+        </div>
+        <div class="srv-card fade-up" style="animation-delay:.28s">
+          <div class="srv-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Brand Identity</h3>
+          <p>Logo, color systems, visual language — I help define how your brand looks across every touchpoint.</p>
+        </div>
+        <div class="srv-card fade-up" style="animation-delay:.35s">
+          <div class="srv-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Launch & Deploy</h3>
+          <p>GitHub hosting, domain setup, and final deployment — your site goes live with zero friction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ WORK ═══════════ -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="sec-head fade-up">
+        <span class="sec-label">// My Work</span>
+        <h2 class="sec-h2">Projects That<br/><em>Speak For Themselves</em></h2>
+      </div>
+      <div class="work-grid">
+
+        <a class="wcard fade-up" href="https://emperorprem397.github.io/Sarojdhara_hospital/" target="_blank" rel="noopener">
+          <div class="wcard-img-wrap">
+            <img src="images/sarojdhara-preview.png" alt="Dr. Sarojdhara Hospital" class="wcard-img"/>
+            <div class="wcard-ov">
+              <span class="wcard-cat">Healthcare · Web Design + SEO</span>
+              <p>Professional website for a maternity & fetal care centre — clean UI, service listings, and full SEO structure.</p>
+              <div class="wcard-tags"><span>HTML/CSS</span><span>JavaScript</span><span>SEO</span></div>
+              <div class="wcard-cta">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+          </div>
+          <div class="wcard-foot">
+            <h3>Dr. Sarojdhara Hospital</h3>
+            <span>Maternity &amp; Fetal Care Centre</span>
+          </div>
+        </a>
+
+        <a class="wcard fade-up" href="https://emperorprem397.github.io/NaveenNutrition/" target="_blank" rel="noopener" style="animation-delay:.08s">
+          <div class="wcard-img-wrap">
+            <img src="images/naveen-preview.png" alt="Naveen Nutrition" class="wcard-img"/>
+            <div class="wcard-ov">
+              <span class="wcard-cat">Retail · Web Design + SEO</span>
+              <p>Conversion-focused site for Jodhpur's top supplement store — product showcase, WhatsApp ordering, full SEO.</p>
+              <div class="wcard-tags"><span>HTML/CSS</span><span>SEO</span><span>WhatsApp</span></div>
+              <div class="wcard-cta">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+          </div>
+          <div class="wcard-foot">
+            <h3>Naveen Nutrition</h3>
+            <span>Supplement Store Website</span>
+          </div>
+        </a>
+
+        <a class="wcard fade-up" href="https://emperorprem397.github.io/om.medical/" target="_blank" rel="noopener" style="animation-delay:.16s">
+          <div class="wcard-img-wrap">
+            <img src="images/om-medical-preview.jpg" alt="Om Medical Store" class="wcard-img"/>
+            <div class="wcard-ov">
+              <span class="wcard-cat">Pharmacy · Web Design</span>
+              <p>Trusted, clean pharmacy website — service info, contact integration, and mobile-optimised layout.</p>
+              <div class="wcard-tags"><span>HTML/CSS</span><span>Responsive</span><span>Local SEO</span></div>
+              <div class="wcard-cta">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+          </div>
+          <div class="wcard-foot">
+            <h3>Om Medical Store</h3>
+            <span>Trusted Pharmacy – Jodhpur</span>
+          </div>
+        </a>
+
+        <a class="wcard fade-up" href="https://emperorprem397.github.io/BurgerMela/" target="_blank" rel="noopener" style="animation-delay:.24s">
+          <div class="wcard-img-wrap">
+            <img src="images/burgermela-preview.png" alt="Burger Mela" class="wcard-img"/>
+            <div class="wcard-ov">
+              <span class="wcard-cat">Restaurant · Web Design</span>
+              <p>Bold, high-energy website for a burger brand — animated menus, order flow, delivery integrations.</p>
+              <div class="wcard-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Animations</span></div>
+              <div class="wcard-cta">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+          </div>
+          <div class="wcard-foot">
+            <h3>Burger Mela</h3>
+            <span>Restaurant Website</span>
+          </div>
+        </a>
+
+        <a class="wcard fade-up" href="https://emperorprem397.github.io/RupaliEnterprises/" target="_blank" rel="noopener" style="animation-delay:.32s">
+          <div class="wcard-img-wrap">
+            <img src="images/rupali-preview.jpg" alt="Rupali Enterprises" class="wcard-img"/>
+            <div class="wcard-ov">
+              <span class="wcard-cat">Retail &amp; Beauty · Web Design</span>
+              <p>Vibrant multi-category site for a beauty, gifts & stationery store — booking, gallery, full mobile UX.</p>
+              <div class="wcard-tags"><span>HTML/CSS</span><span>Responsive</span><span>Booking</span></div>
+              <div class="wcard-cta">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+          </div>
+          <div class="wcard-foot">
+            <h3>Rupali Enterprises</h3>
+            <span>Beauty, Gifts &amp; Stationery</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="sec-head fade-up">
+        <span class="sec-label">// My Skills</span>
+        <h2 class="sec-h2">What I'm<br/><em>Good At</em></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="sk-col fade-up">
+          <h4 class="sk-cat">Design</h4>
+          <div class="sk-list">
+            <div class="sk-item"><div class="sk-meta"><span>UI / UX Design</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>Figma</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>Brand Identity</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>Responsive Design</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+          </div>
+        </div>
+        <div class="sk-col fade-up" style="animation-delay:.1s">
+          <h4 class="sk-cat">Development</h4>
+          <div class="sk-list">
+            <div class="sk-item"><div class="sk-meta"><span>HTML / CSS</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>JavaScript</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>Three.js / WebGL</span><span class="sk-pct">70%</span></div><div class="sk-bar"><div class="sk-fill" data-w="70"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>GitHub & Deploy</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+          </div>
+        </div>
+        <div class="sk-col fade-up" style="animation-delay:.2s">
+          <h4 class="sk-cat">Strategy</h4>
+          <div class="sk-list">
+            <div class="sk-item"><div class="sk-meta"><span>SEO Optimisation</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>Performance / Speed</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>Conversion Design</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" data-w="78"></div></div></div>
+            <div class="sk-item"><div class="sk-meta"><span>Client Communication</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="tools-row fade-up">
+        <span class="tools-lbl">Tools:</span>
+        <div class="tools-pills">
+          <span>Figma</span><span>VS Code</span><span>GitHub</span><span>Chrome DevTools</span>
+          <span>Google Search Console</span><span>Canva</span><span>Three.js</span><span>Font Awesome</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="sec-head fade-up">
+        <span class="sec-label">// Contact</span>
+        <h2 class="sec-h2">Let's Build<br/><em>Something Great</em></h2>
+        <p class="sec-sub">Have a project in mind? Drop a message and I'll get back within 24 hours.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-cards fade-up">
+          <a href="tel:+917568521210" class="ccard">
+            <div class="ccard-icon"><i class="fa-solid fa-phone"></i></div>
+            <div><span class="ccard-lbl">Phone</span><span class="ccard-val">+91 75685 21210</span></div>
+          </a>
+          <a href="https://wa.me/917568521210" target="_blank" class="ccard">
+            <div class="ccard-icon wa"><i class="fa-brands fa-whatsapp"></i></div>
+            <div><span class="ccard-lbl">WhatsApp</span><span class="ccard-val">+91 75685 21210</span></div>
+          </a>
+          <a href="mailto:emperorprem397@gmail.com" class="ccard">
+            <div class="ccard-icon em"><i class="fa-solid fa-envelope"></i></div>
+            <div><span class="ccard-lbl">Email</span><span class="ccard-val">emperorprem397@gmail.com</span></div>
+          </a>
+          <a href="https://youtube.com/@emperorprem_7" target="_blank" class="ccard">
+            <div class="ccard-icon yt"><i class="fa-brands fa-youtube"></i></div>
+            <div><span class="ccard-lbl">YouTube</span><span class="ccard-val">@emperorprem_7</span></div>
+          </a>
+        </div>
+        <form class="contact-form fade-up" id="contactForm" onsubmit="handleForm(event)" style="animation-delay:.15s">
+          <div class="fg">
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" placeholder="e.g. Rahul Sharma" required/>
+          </div>
+          <div class="fg">
+            <label for="femail">Email Address</label>
+            <input type="email" id="femail" placeholder="your@email.com" required/>
+          </div>
+          <div class="fg">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span id="btnTxt">Send Message</span>
+            <i class="fa-solid fa-paper-plane" id="btnIco"></i>
+          </button>
+          <p class="fnote" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ VISITING CARD ═══════════ -->
+  <section class="vcard-section">
+    <div class="container">
+      <div class="sec-head fade-up" style="text-align:center">
+        <span class="sec-label">// Business Card</span>
+        <h2 class="sec-h2" style="text-align:center">Save My<br/><em>Contact Card</em></h2>
+        <p class="sec-sub" style="margin:0 auto;text-align:center">Scan or save for quick access to my services.</p>
+      </div>
+      <div class="vcard-wrap fade-up">
+        <div class="vcard-glow"></div>
+        <img src="images/visiting-card.png" alt="Prem Vijay Kadam — Web Designer Business Card" class="vcard-img"/>
+        <a href="images/visiting-card.png" download="PremVijayKadam-Card.png" class="vcard-dl">
+          <i class="fa-solid fa-download"></i> Download Card
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">[PVK]</span>
+      <p>© 2025 Prem Vijay Kadam &nbsp;·&nbsp; <em>Creative · Reliable · Professional</em></p>
+      <div class="footer-soc">
+        <a href="mailto:emperorprem397@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/917568521210" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://youtube.com/@emperorprem_7" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
